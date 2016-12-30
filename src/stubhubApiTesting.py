@@ -25,36 +25,47 @@ print('SUCCESS | Generated Basic Authorization Token: {}'.format(basic_authoriza
 headers = {
         'Content-Type':'application/x-www-form-urlencoded',
         'Authorization':'Basic '+basic_authorization_token,}
-body = {
-        'grant_type':'password',
-        'username':stubhub_username,
-        'password':stubhub_password,
-        'scope':'PRODUCTION'}
 
-## Making the call
-url = 'https://api.stubhub.com/login'
-r = requests.post(url, headers=headers, data=body)
-token_respoonse = r.json()
-access_token = token_respoonse['access_token']
-user_GUID = r.headers['X-StubHub-User-GUID']
-print('SUCCESS | Logged in. User GUID: {}'.format(user_GUID))
+def login():
+    # DESCRIPTION: Login to the stubhub api. You will be prompted for a password
+    url = 'https://api.stubhub.com/login'
+    ## Enter user's API key, secret, and Stubhub login
+    app_token = 'Qkbc3IufMQhlQCODJH_07H6gE5wa'
+    consumer_key = 'ZKMRtN_TA2wOfxj0DGIMPv8d2o0a'
+    consumer_secret = 'Ia4DTNJUsvq_9TlVnVurh_QZRMEa'
+    stubhub_username = 'brandonjflannery@gmail.com'
+    stubhub_password = raw_input('Enter Stubhub password: ')
 
-#### Step 2 - Searching inventory for an event ####
-inventory_url = 'https://api.stubhub.com/catalog/events/v1'
+    ## Generating basic authorization token
+    combo = consumer_key + ':' + consumer_secret
+    basic_authorization_token = base64.b64encode(combo)
+    print('SUCCESS | Generated Basic Authorization Token: {}'.format(basic_authorization_token))
 
-headers['Authorization'] = 'Bearer ' + access_token
-headers['Accept'] = 'application/json'
-headers['Accept-Encoding'] = 'application/json'
+    headers = {'Content-Type':'application/x-www-form-urlencoded',
+                'Authorization':'Basic '+basic_authorization_token}
+    body = {
+        'grant_type':'password', 'username':stubhub_username,
+        'password':stubhub_password,  'scope':'PRODUCTION'
+        }
+    r = requests.post(url, headers=headers, data=body)
+    token_respoonse = r.json()
+    access_token = token_respoonse['access_token']
+    user_GUID = r.headers['X-StubHub-User-GUID']
+    print('SUCCESS | Logged in. User GUID: {}'.format(user_GUID))
+    return
 
-eventid = 9760324 # Kaskade, January 1, San Francisco
-data = {'eventid':eventid}
+def getEvent(eventId):
+    # DESCRIPTION: Given an eventId (int), return the event json describing the event
+    data = {'eventId':eventId}
+    inventory_url = 'https://api.stubhub.com/catalog/events/v2/{}'.format(data['eventId'])
 
-inventory = requests.get(inventory_url, headers=headers, params=data)
-print(dir(inventory))
-print
-inv = inventory.json()
-print inv
-listing = inv['listing']
+    headers['Authorization'] = 'Bearer ' + access_token
+    headers['Accept'] = 'application/json'
+    headers['Accept-Encoding'] = 'application/json'
+
+    event = requests.get(event_url, headers=headers, params=data)
+    eJson = event.json()
+    return eJson
 
 ## Flattening some nested dictionary for ticket price
 for t in listing:
