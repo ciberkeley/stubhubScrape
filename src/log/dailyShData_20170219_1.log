@@ -1,0 +1,34 @@
+Enter Stubhub password: SUCCESS | Generated Basic Authorization Token: WktNUnROX1RBMndPZnhqMERHSU1QdjhkMm8wYTpJYTREVE5KVXN2cV85VGxWblZ1cmhfUVpSTUVh
+SUCCESS | Logged in. User GUID: 3B39E898C8CB5D93E0540010E0463606
+PROCESS | Starting Daily Stubhub Data Pull. Start Time: 2017-02-19 22:08:18.340170
+INFO | Pulling info for eventId:9812696
+Using: https://api.stubhub.com/search/inventory/v2
+SUCCESS | Pulled Event Information for eventId:9812696 on 2017-02-19
+INFO | Pulling info for eventId:9812697
+Using: https://api.stubhub.com/search/inventory/v2
+SUCCESS | Pulled Event Information for eventId:9812697 on 2017-02-19
+INFO | Pulling info for eventId:9825152
+Using: https://api.stubhub.com/search/inventory/v2
+SUCCESS | Pulled Event Information for eventId:9825152 on 2017-02-19
+INFO | Pulling info for eventId:9828617
+Using: https://api.stubhub.com/search/inventory/v2
+SUCCESS | Pulled Event Information for eventId:9828617 on 2017-02-19
+INFO | Pulling info for eventId:9821455
+Using: https://api.stubhub.com/search/inventory/v2
+SUCCESS | Pulled Event Information for eventId:9821455 on 2017-02-19
+INFO | Pulling info for eventId:9751227
+Using: https://api.stubhub.com/search/inventory/v2
+SUCCESS | Pulled Event Information for eventId:9751227 on 2017-02-19
+INFO | Pulling info for eventId:9670771
+Using: https://api.stubhub.com/search/inventory/v2
+SUCCESS | Pulled Event Information for eventId:9670771 on 2017-02-19
+INFO | Pulling info for eventId:9790689
+Using: https://api.stubhub.com/search/inventory/v2
+SUCCESS | Pulled Event Information for eventId:9790689 on 2017-02-19
+INFO | Pulling info for eventId:9825099
+Using: https://api.stubhub.com/search/inventory/v2
+SUCCESS | Pulled Event Information for eventId:9825099 on 2017-02-19
+INFO | Pulling info for eventId:9817147
+Using: https://api.stubhub.com/search/inventory/v2
+SUCCESS | Pulled Event Information for eventId:9817147 on 2017-02-19
+INFO | Sleeping for 1 hour... Start Time: 2017-02-19 22:09:25.485386

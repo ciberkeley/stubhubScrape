@@ -43,11 +43,9 @@ def getEvent(eventId):
     # DESCRIPTION: Given an eventId (int), return the event json describing the event
     data = {'eventid':eventId}
     event_url = 'https://api.stubhub.com/catalog/events/v2/{}'.format(data['eventid'])
-
     headers['Authorization'] = 'Bearer ' + access_token
     headers['Accept'] = 'application/json'
     headers['Accept-Encoding'] = 'application/json'
-
     event = requests.get(event_url, headers=headers)
     eJson = event.json()
     return eJson
@@ -69,7 +67,6 @@ def getEventInventory(eventId):
     # DESCRIPTION: Given an eventId (int), return the event-inventory json describing the events inventory metadata
     data = {'eventId':eventId}
     event_inv_url = 'https://api.stubhub.com/search/inventory/v2'
-    print('Using: {}'.format(event_inv_url))
     #event_inv_url = 'https://api.stubhubsandbox.com/inventory/listings/v1'
     headers['Authorization'] = 'Bearer ' + access_token
     headers['Accept'] = 'application/json'
