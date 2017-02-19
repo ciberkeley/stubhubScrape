@@ -82,7 +82,7 @@ def pretty(d, indent=0):
         final_string += '\n' + ('\t' * indent + "{}:{}{}".format(str(key), '\t', str(value)))
     return final_string
 
-def emailPresaleInfo(event_list, address_list):
+def emailPresaleInfo(event_list, address_list, notification_id):
     # For all evnent-jsons in event_list, email all presale information to each address in 
     # address_list
     # Note: This method will only pull active presales and has a filter to only report active presales
@@ -113,7 +113,7 @@ def emailPresaleInfo(event_list, address_list):
             #       or livenation.com.... needs to be fixed
             print('ERROR | Could not extract presale info for --> {}'.format(','.join([name,url])))
             continue
-    subject = 'Presale Notifications: {}'.format(time())
+    subject = '{} | Presale Notifications: {}'.format(notification_id, time())
     msg = '======================\n==>PRESALE INFO\n==>{}\n==>Successful Observations: {}/{}\n======================\n{}'.format(time(), success_count, len(event_list), full_presale_info_string)
     for address in address_list:
         notifyByEmail(address, subject, msg)
@@ -128,9 +128,14 @@ def emailPresaleInfo(event_list, address_list):
 
 if __name__ == '__main__':
     full_presale_info_string = ''
-    latlong = ','.join(['37.867197', '-122.249933'])
+    latlong_sf = ','.join(['37.867197', '-122.249933'])
+    latlong_ny = ','.join(['40.751815', '-73.988595'])
+    latlong_la = ','.join(['34.047945', '-118.253294'])
     #event_list = getEvents(api_param_dict={'countryCode': 'US', 'stateCode': 'CA'}) #California events
-    event_list = getEvents(api_param_dict={'latlong': latlong, 'radius': '50', 'unit': 'miles'})
+    event_list_sf = getEvents(api_param_dict={'latlong': latlong_sf, 'radius': '50', 'unit': 'miles'})
+    event_list_ny = getEvents(api_param_dict={'latlong': latlong_ny, 'radius': '20', 'unit': 'miles'})
+    event_list_la = getEvents(api_param_dict={'latlong': latlong_la, 'radius': '50', 'unit': 'miles'})
+    '''
     for event in event_list[:2]:
         print '-' * 50
         print('EVENT | {}: {}'.format(event['name'], event['url']))
@@ -140,8 +145,11 @@ if __name__ == '__main__':
         print('SALE | {}'.format(sales_json_list))
         date_json = getDateJson(event)
         print('DATE | {}'.format(date_json))
+    '''
     address_list = ['brandonjflannery@gmail.com', 'jaredbaker5@gmail.com']
-    emailPresaleInfo(event_list, address_list)    
+    emailPresaleInfo(event_list_sf, address_list, notification_id = 'San Francisco')    
+    emailPresaleInfo(event_list_ny, address_list, notification_id = 'New York')
+    emailPresaleInfo(event_list_la, address_list, notification_id = 'Los Angeles')
 
 
 
