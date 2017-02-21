@@ -35,17 +35,5 @@ def login():
 
 login()
 
-def get():
-    # DESCRIPTION: Given an eventId (int), return the event json describing the event
-    event_url = 'https://api.stubhub.com/search/catalog/events/v2?id=9812696'
-    event_url = 'https://api.stubhub.com/search/catalog/events/v3?point=40.2,-83.1&radius=120&minAvailableTickets=1&date=2014-06-01T00:00 TO 2014-06-01T23:59&sort=distance asc HTTP/1.1'
-    print event_url
-    #data = {'query': "title=Warriors"}
-    headers['Authorization'] = 'Bearer ' + access_token
-    headers['Accept'] = 'application/json'
-    headers['Accept-Encoding'] = 'application/json'
-    event = requests.get(event_url, headers=headers)
-    print event
-    eJson = event.json()
-    return eJson
-a=get()
+a=shapi.searchEvents(37.782104, -122.422153, 10, 'mi')
+shCollection = pymongo.MongoClient().shData.shCollection
