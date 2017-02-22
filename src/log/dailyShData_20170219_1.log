@@ -1,7 +1,1 @@
 Enter Stubhub password: SUCCESS | Generated Basic Authorization Token: WktNUnROX1RBMndPZnhqMERHSU1QdjhkMm8wYTpJYTREVE5KVXN2cV85VGxWblZ1cmhfUVpSTUVh
-SUCCESS | Logged in. User GUID: 3B39E898C8CB5D93E0540010E0463606
-PROCESS | Starting Daily Stubhub Data Pull. Start Time: 2017-02-22 06:05:37.787976
-SUCCESS | Loaded MongoDB client.
-LOCATION SEARCH | Searching for events around lat:37.866628, lon:-122.256217, radius:10, name:Berkeley/Oakland (Small Radius)
-SUCCESS | Event query performed. Args: Lat: 37.866628. Lon: -122.256217. Radius: 10. Units: mi. API Calls: 2. Events Returned: 994.
-SUCCESS | Location search returned 994 events.

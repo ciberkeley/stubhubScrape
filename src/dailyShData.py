@@ -43,7 +43,7 @@ def continuousPullWrite(collection):
                 search_response = sh.searchEvents(lat, lon, rad, units)
                 api_calls += int(len(search_response['events']) / 500) + 1
                 print('SUCCESS | Location search returned {} events.'.format(len(search_response['events'])))
-                for event_object in search_response['events'][:10]: # get full event info across location results
+                for event_object in search_response['events']: # get full event info across location results
                     try: # Get event info and add to mongo
                         fullInfo = sh.getFullEventInfo(int(event_object['id']), event_object) # takes .4 sec, 1 api calls with event_object supplied
                         collection.insert_one(fullInfo)
@@ -62,7 +62,7 @@ def continuousPullWrite(collection):
                     history_dict_by_day[curr_day].append([lat, lon]) # Add entry to location search log
                 except:
                     history_dict_by_day[curr_day] = [[lat, lon]]
-                print('SUCCESS | Pulled Event Information for {} on {}. API-Call Rate: {}. Mongo Collection Size: {}'.format(name, curr_day, (time() - st) / api_calls, collection.count()))
+                print('SUCCESS | Pulled Event Information for {} on {}. Time/apiCall: {}. Mongo Collection Size: {}'.format(name, curr_day, (time() - st) / api_calls, collection.count()))
             else:
                 print('WARNING | Location: {},{},{} already scraped on {}. Skipping.'.format(lat, lon, rad, curr_day))
             today = str(time())[:10]
