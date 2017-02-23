@@ -98,7 +98,7 @@ def searchEvents(latitude, longitude, radius = 40, units = 'mi'):
     # 		  matching the specified criteria
     #		  This returns a dictionary formatted as {'numFound: int, 'events': list}
     api_calls = 0
-    row_index_dict = {x: 500 * x for x in range(1,10)}
+    row_index_dict = {x: 500 * x for x in range(1,15)}
     event_url = 'https://api.stubhub.com/search/catalog/events/v3?point={},{}&radius={}&units={}&rows=500&start=0'.format(latitude, longitude, radius, units)
     headers['Authorization'] = 'Bearer ' + access_token
     headers['Accept'] = 'application/json'
@@ -115,7 +115,7 @@ def searchEvents(latitude, longitude, radius = 40, units = 'mi'):
 	return {'numFound': 0, 'events': []} # Return empty object
     if numFound_1st < 500:
 	return eSearchJson
-    addition_query_starts = [row_index_dict[x] for x in range(1, int(numFound_1st / 500) + 1)] # Finding if additonal api calls are needed
+    addition_query_starts = [row_index_dict[x] for x in range(1, min(15, int(numFound_1st / 500) + 1))] # Finding if additonal api calls are needed
     event_url2 = 'https://api.stubhub.com/search/catalog/events/v3?point={},{}&radius={}&units={}&rows=500&start={}'
     event_url_list = [event_url2.format(latitude, longitude, radius, units, x) for x in addition_query_starts]
     for curr_url in event_url_list: # Getting additonal event objects as each api call returns max 10 objects

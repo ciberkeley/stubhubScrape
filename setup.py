@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(name='stubhubAPI',
-      version='1.0',
+      version='1.1',
       description='Python package used to access the Stubhub API',
       author='Brandon Flannery',
       author_email='brandonjflannery@gmail.com',

@@ -5,3 +5,22 @@ SUCCESS | Loaded MongoDB client.
 LOCATION SEARCH | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
 SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1815.
 SUCCESS | Location search returned 1815 events.
+ERROR | Could not pull and store event information for event:9820702. Exception: Expecting value: line 1 column 1 (char 0)
+ERROR | Could not pull and store event information for event:9820777. Exception: Expecting value: line 1 column 1 (char 0)
+ERROR | Could not pull and store event information for event:9820844. Exception: Expecting value: line 1 column 1 (char 0)
+ERROR | Could not pull and store event information for event:9820888. Exception: Expecting value: line 1 column 1 (char 0)
+ERROR | Could not pull and store event information for event:9819213. Exception: Expecting value: line 1 column 1 (char 0)
+ERROR | Could not pull and store event information for event:9772866. Exception: Expecting value: line 1 column 1 (char 0)
+ERROR | Could not pull and store event information for event:9804678. Exception: Expecting value: line 1 column 1 (char 0)
+ERROR | Could not pull and store event information for event:9806144. Exception: Expecting value: line 1 column 1 (char 0)
+SUCCESS | Pulled Event Information for San Francisco / Oakland (25 mi) on 2017-02-22. Time/apiCall: 0:00:06.222937. Mongo Collection Size: 2756
+LOCATION SEARCH | Searching for events around lat:34.042929, lon:-118.25996, radius:25, name:Los Angeles (25 mi)
+SUCCESS | Event query performed. Args: Lat: 34.042929. Lon: -118.25996. Radius: 25. Units: mi. API Calls: 6. Events Returned: 2989.
+SUCCESS | Location search returned 2989 events.
+SUCCESS | Pulled Event Information for Los Angeles (25 mi) on 2017-02-22. Time/apiCall: 0:00:06.232424. Mongo Collection Size: 5745
+LOCATION SEARCH | Searching for events around lat:32.777648, lon:-117.176551, radius:15, name:Orange Country (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.777648. Lon: -117.176551. Radius: 15. Units: mi. API Calls: 2. Events Returned: 866.
+SUCCESS | Location search returned 866 events.
+SUCCESS | Pulled Event Information for Orange Country (15 mi) on 2017-02-22. Time/apiCall: 0:00:06.234702. Mongo Collection Size: 6611
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-22. Skipping.
+LOCATION SEARCH | Searching for events around lat:40.744255, lon:-73.986714, radius:15, name:New York (15 mi)

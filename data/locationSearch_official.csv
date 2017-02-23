@@ -1,2 +1,6 @@
 lat,lon,rad,units,name
-37.236697,-121.820974,15,mi,San Francisco (Small Radius)
+37.813552,-122.369772,25,mi,San Francisco / Oakland (25 mi)
+34.042929,-118.259960,25,mi,Los Angeles (25 mi)
+32.777648,-117.176551,15,mi,Orange Country (15 mi)
+32.777648,-117.176551,15,mi,San Diego (15 mi)
+40.744255,-73.986714,15,mi,New York (15 mi)
