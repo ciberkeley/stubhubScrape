@@ -24,12 +24,12 @@ def scrapedToday(history_dict_by_day, day, lat, lon):
     # Given a history_dict_by_day containing {day: [lat, lon]} mappings, determine whether
     # the lat, long pair was scraped on the given day 
     try: # Check if we've searched this location today
-        scrapedToday = [lat, lon] in history_dict_by_day[curr_day]
+        scrapedToday = [lat, lon] in history_dict_by_day[day]
     except KeyError:
         scrapedToday = False    
     return scrapedToday
 
-def addEventInfoByVenue(event_json_list, shCollection, venue_id_list):
+def addEventInfoByVenue(event_json_list, shCollection, venue_id_list, history_dict_by_eventId):
     # Given a list of event jsons, a mongo collection object, and a list of venue ids,
     # Filter through the event json list for events matching a venue in venue_id_list.
     # For all matching events, use sh.getFullEventInfo to get the inventory data,
@@ -43,6 +43,7 @@ def addEventInfoByVenue(event_json_list, shCollection, venue_id_list):
     del event_json_list # free memory
     for event_object in filtered_event_list:
         try: # Get event info and add to mongo
+            curr_day = str(time())[:10]
             fullInfo = sh.getFullEventInfo(int(event_object['id']), event_object) # takes .4 sec, 1 api calls with event_object supplied
             shCollection.insert_one(fullInfo)
             time1.sleep(6) # To avoid reaching api requests limit (10 requests/min). Currently at 1 api calls per loop
@@ -57,10 +58,10 @@ def addEventInfoByVenue(event_json_list, shCollection, venue_id_list):
             time1.sleep(6)
             continue
     total_time = time() - st
-    api_call_rate = total_time / float(api_calls)
+    api_call_rate = api_calls
     string_format = [len(filtered_event_list), total_time, api_call_rate]
-    print('addEventInfoByVenue | Completed Full Event Info pull for {} observations. Time: {}. Time/apiCall:'.format(*string_format)
-    return 1
+    print('addEventInfoByVenue | Completed Full Event Info pull for {} observations. Time: {}. apiCall:'.format(*string_format))
+    return history_dict_by_eventId
 
 
 def continuousPullWrite(collection):
@@ -78,33 +79,38 @@ def continuousPullWrite(collection):
         localSearch_df = pd.read_csv('../data/locationSearch_official.csv') # Reload every loop
         venueId_df = pd.read_csv('../data/venueIdSearch_official.csv') # Reload every loop
         venueId_list = list(venueId_df.venueId)
+        locSearch_names = list(localSearch_df.name)
+        print('LocationSerch | Searching through locations: {}'.format(locSearch_names))
         for row_index in localSearch_df.index: # Loop through locations to search through
             lat, lon, rad, units, name = localSearch_df.ix[row_index][['lat', 'lon', 'rad', 'units', 'name']]
             curr_day = str(time())[:10]
             scraped_today = scrapedToday(history_dict_by_day, curr_day, lat, lon)
-            if not scrapedToday:
+            if not scraped_today:
                 print('LocationSearch | Searching for events around lat:{}, lon:{}, radius:{}, name:{}'.format(lat, lon, rad, name))
                 search_response = sh.searchEvents(lat, lon, rad, units)
                 api_calls += int(len(search_response['events']) / 500) + 1
                 print('LocationSearch | Location search returned {} events.'.format(len(search_response['events'])))
-                addEventInfoByVenue(search_response['events'], collection, venueId_list)
+                history_dict_by_eventId = addEventInfoByVenue(search_response['events'][:5], collection, venueId_list, history_dict_by_eventId)
                 try:
                     history_dict_by_day[curr_day].append([lat, lon]) # Add entry to location search log
                 except:
                     history_dict_by_day[curr_day] = [[lat, lon]]
                 string_format = [name, curr_day, (time() - st) / api_calls, collection.count()]
-                print('LocationSearch | Pulled Full Event Information for {} on {}. Time/apiCall: {}. Mongo Collection Size: {}'.format(*string_format)
+                print('LocationSearch | Pulled Full Event Information for {} on {}. Time/apiCall: {}. Mongo Collection Size: {}'.format(*string_format))
+                string_format = [len(history_dict_by_day[curr_day]), len(localSearch_df), history_dict_by_day[curr_day]]
+                print('LocationSearch | {}/{} lat, long corrdinates searched today: {}'.format(*string_format))
             else:
                 print('WARNING | Location: {},{},{} already scraped on {}. Skipping.'.format(lat, lon, rad, curr_day))
-            today = str(time())[:10]
-            doneForToday = len(history_dict_by_day[today]) == len(localSearch_df) # We searched all locations
-            if doneForToday:
-                print('SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: {}'.format(time()))
-                time1.sleep(60 * 60 * 1) # Sleep for 1 hour
+        today = str(time())[:10]
+        doneForToday = len(history_dict_by_day[today]) == len(localSearch_df) # We searched all locations
+        if doneForToday:
+            print('SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: {}'.format(time()))
+            time1.sleep(60 * 60 * 1) # Sleep for 1 hour
         # continue to another event search
     return None
 
 if __name__ == '__main__':
+    # $ stdbuf -oL python -W ignore dailyShData.py > log/dailyShData_YYYYMMDD_I.log
     print('PROCESS | Starting Daily Stubhub Data Pull. Start Time: {}'.format(time()))
     
 	# Setup mongo client
