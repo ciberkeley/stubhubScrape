@@ -1,0 +1,518 @@
+Enter Stubhub password: SUCCESS | Generated Basic Authorization Token: WktNUnROX1RBMndPZnhqMERHSU1QdjhkMm8wYTpJYTREVE5KVXN2cV85VGxWblZ1cmhfUVpSTUVh
+SUCCESS | Logged in. User GUID: 3B39E898C8CB5D93E0540010E0463606
+PROCESS | Starting Daily Stubhub Data Pull. Start Time: 2017-02-27 03:09:26.633888
+SUCCESS | Loaded MongoDB client.
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+LocationSearch | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
+SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1813.
+LocationSearch | Location search returned 1813 events.
+addEventInfoByVenue | Kept 262/1813 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 262 observations. Time: 0:27:15.807350. apiCall:
+LocationSearch | Pulled Full Event Information for San Francisco / Oakland (25 mi) on 2017-02-27. Time/apiCall: 0:06:52.057550. Mongo Collection Size: 31090
+LocationSearch | 1/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772]]
+LocationSearch | Searching for events around lat:34.042929, lon:-118.25996, radius:25, name:Los Angeles (25 mi)
+SUCCESS | Event query performed. Args: Lat: 34.042929. Lon: -118.25996. Radius: 25. Units: mi. API Calls: 6. Events Returned: 2940.
+LocationSearch | Location search returned 2940 events.
+addEventInfoByVenue | Kept 0/2940 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 0 observations. Time: 0:00:00.019768. apiCall:
+LocationSearch | Pulled Full Event Information for Los Angeles (25 mi) on 2017-02-27. Time/apiCall: 0:02:47.211935. Mongo Collection Size: 31090
+LocationSearch | 2/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001]]
+LocationSearch | Searching for events around lat:32.777648, lon:-117.176551, radius:15, name:Orange Country (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.777648. Lon: -117.176551. Radius: 15. Units: mi. API Calls: 2. Events Returned: 849.
+LocationSearch | Location search returned 849 events.
+addEventInfoByVenue | Kept 0/849 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 0 observations. Time: 0:00:00.005417. apiCall:
+LocationSearch | Pulled Full Event Information for Orange Country (15 mi) on 2017-02-27. Time/apiCall: 0:02:19.924930. Mongo Collection Size: 31090
+LocationSearch | 3/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551]]
+LocationSearch | Searching for events around lat:32.746021, lon:-117.165925, radius:15, name:San Diego (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.746021. Lon: -117.165925. Radius: 15. Units: mi. API Calls: 2. Events Returned: 868.
+LocationSearch | Location search returned 868 events.
+addEventInfoByVenue | Kept 0/868 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 0 observations. Time: 0:00:00.005748. apiCall:
+LocationSearch | Pulled Full Event Information for San Diego (15 mi) on 2017-02-27. Time/apiCall: 0:02:00.440479. Mongo Collection Size: 31090
+LocationSearch | 4/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925]]
+LocationSearch | Searching for events around lat:40.744255, lon:-73.986714, radius:10, name:New York (10 mi)
+SUCCESS | Event query performed. Args: Lat: 40.744255. Lon: -73.986714. Radius: 10. Units: mi. API Calls: 15. Events Returned: 7500.
+LocationSearch | Location search returned 7500 events.
+addEventInfoByVenue | Kept 0/7500 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 0 observations. Time: 0:00:00.047934. apiCall:
+LocationSearch | Pulled Full Event Information for New York (10 mi) on 2017-02-27. Time/apiCall: 0:00:58.167187. Mongo Collection Size: 31090
+LocationSearch | 5/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925], [40.744254999999995, -73.986714000000006]]
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 03:38:31.651442
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 04:38:31.763846
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 05:38:31.797304
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 06:38:31.900332
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 07:38:31.996886
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 08:38:32.106289
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 09:38:32.197341
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 10:38:32.278866
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 11:38:32.360964
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 12:38:32.463098
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 13:38:32.543180
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 14:38:32.597822
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 15:38:32.697054
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 16:38:32.767444
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 17:38:32.815849
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 18:38:32.899994
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 19:38:32.996843
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 20:38:33.010459
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 21:38:33.097776
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 22:38:33.199011
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-27. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-27. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-27 23:38:33.212262
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+LocationSearch | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
+SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1808.
+LocationSearch | Location search returned 1808 events.
+addEventInfoByVenue | Kept 284/1808 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 284 observations. Time: 0:29:39.178780. apiCall:
+LocationSearch | Pulled Full Event Information for San Francisco / Oakland (25 mi) on 2017-02-28. Time/apiCall: 0:38:47.675217. Mongo Collection Size: 31374
+LocationSearch | 1/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772]]
+LocationSearch | Searching for events around lat:34.042929, lon:-118.25996, radius:25, name:Los Angeles (25 mi)
+SUCCESS | Event query performed. Args: Lat: 34.042929. Lon: -118.25996. Radius: 25. Units: mi. API Calls: 6. Events Returned: 2937.
+LocationSearch | Location search returned 2937 events.
+addEventInfoByVenue | Kept 196/2937 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 196 observations. Time: 0:20:29.926524. apiCall:
+LocationSearch | Pulled Full Event Information for Los Angeles (25 mi) on 2017-02-28. Time/apiCall: 0:33:29.879706. Mongo Collection Size: 31570
+LocationSearch | 2/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001]]
+LocationSearch | Searching for events around lat:32.777648, lon:-117.176551, radius:15, name:Orange Country (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.777648. Lon: -117.176551. Radius: 15. Units: mi. API Calls: 2. Events Returned: 851.
+LocationSearch | Location search returned 851 events.
+addEventInfoByVenue | Kept 56/851 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 56 observations. Time: 0:05:50.357069. apiCall:
+LocationSearch | Pulled Full Event Information for Orange Country (15 mi) on 2017-02-28. Time/apiCall: 0:32:02.682971. Mongo Collection Size: 31626
+LocationSearch | 3/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551]]
+LocationSearch | Searching for events around lat:32.746021, lon:-117.165925, radius:15, name:San Diego (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.746021. Lon: -117.165925. Radius: 15. Units: mi. API Calls: 2. Events Returned: 870.
+LocationSearch | Location search returned 870 events.
+addEventInfoByVenue | Kept 63/870 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 63 observations. Time: 0:06:32.160144. apiCall:
+LocationSearch | Pulled Full Event Information for San Diego (15 mi) on 2017-02-28. Time/apiCall: 0:30:44.397212. Mongo Collection Size: 31689
+LocationSearch | 4/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925]]
+LocationSearch | Searching for events around lat:40.744255, lon:-73.986714, radius:10, name:New York (10 mi)
+ERROR | Could not pull event info. Url: https://api.stubhub.com/search/catalog/events/v3?point=40.744255,-73.986714&radius=10&units=mi&rows=500&start=5000. Event response: <Response [429]>. Exception: Expecting value: line 1 column 1 (char 0).
+ERROR | Could not pull event info. Url: https://api.stubhub.com/search/catalog/events/v3?point=40.744255,-73.986714&radius=10&units=mi&rows=500&start=6500. Event response: <Response [429]>. Exception: Expecting value: line 1 column 1 (char 0).
+ERROR | Could not pull event info. Url: https://api.stubhub.com/search/catalog/events/v3?point=40.744255,-73.986714&radius=10&units=mi&rows=500&start=7000. Event response: <Response [429]>. Exception: Expecting value: line 1 column 1 (char 0).
+SUCCESS | Event query performed. Args: Lat: 40.744255. Lon: -73.986714. Radius: 10. Units: mi. API Calls: 15. Events Returned: 6000.
+LocationSearch | Location search returned 6000 events.
+addEventInfoByVenue | Kept 0/6000 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 0 observations. Time: 0:00:00.050355. apiCall:
+LocationSearch | Pulled Full Event Information for New York (10 mi) on 2017-02-28. Time/apiCall: 0:23:44.588271. Mongo Collection Size: 31689
+LocationSearch | 5/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925], [40.744254999999995, -73.986714000000006]]
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 01:42:48.167556
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 02:42:48.247152
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 03:42:48.297223
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 04:42:48.397780
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 05:42:48.425754
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 06:42:48.512206
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 07:42:48.597574
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 08:42:48.606271
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 09:42:48.697155
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 10:42:48.725500
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 11:42:48.832989
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 12:42:48.934335
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 13:42:48.997226
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 14:42:49.097596
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 15:42:49.118141
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 16:42:49.197945
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 17:42:49.259857
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 18:42:49.297510
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 19:42:49.303744
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 20:42:49.398980
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 21:42:49.486696
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 22:42:49.545096
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-02-28. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-02-28. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-02-28 23:42:49.650316
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+LocationSearch | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
+SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1849.
+LocationSearch | Location search returned 1849 events.
+addEventInfoByVenue | Kept 289/1849 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 289 observations. Time: 0:30:14.012283. apiCall:
+LocationSearch | Pulled Full Event Information for San Francisco / Oakland (25 mi) on 2017-03-01. Time/apiCall: 0:45:18.520652. Mongo Collection Size: 31978
+LocationSearch | 1/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772]]
+LocationSearch | Searching for events around lat:34.042929, lon:-118.25996, radius:25, name:Los Angeles (25 mi)
+SUCCESS | Event query performed. Args: Lat: 34.042929. Lon: -118.25996. Radius: 25. Units: mi. API Calls: 6. Events Returned: 2944.
+LocationSearch | Location search returned 2944 events.
+addEventInfoByVenue | Kept 206/2944 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 206 observations. Time: 0:21:28.572712. apiCall:
+LocationSearch | Pulled Full Event Information for Los Angeles (25 mi) on 2017-03-01. Time/apiCall: 0:41:34.614616. Mongo Collection Size: 32184
+LocationSearch | 2/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001]]
+LocationSearch | Searching for events around lat:32.777648, lon:-117.176551, radius:15, name:Orange Country (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.777648. Lon: -117.176551. Radius: 15. Units: mi. API Calls: 2. Events Returned: 857.
+LocationSearch | Location search returned 857 events.
+addEventInfoByVenue | Kept 67/857 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 67 observations. Time: 0:06:57.152365. apiCall:
+LocationSearch | Pulled Full Event Information for Orange Country (15 mi) on 2017-03-01. Time/apiCall: 0:40:28.442048. Mongo Collection Size: 32251
+LocationSearch | 3/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551]]
+LocationSearch | Searching for events around lat:32.746021, lon:-117.165925, radius:15, name:San Diego (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.746021. Lon: -117.165925. Radius: 15. Units: mi. API Calls: 2. Events Returned: 877.
+LocationSearch | Location search returned 877 events.
+addEventInfoByVenue | Kept 66/877 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 66 observations. Time: 0:06:52.050632. apiCall:
+LocationSearch | Pulled Full Event Information for San Diego (15 mi) on 2017-03-01. Time/apiCall: 0:39:25.924737. Mongo Collection Size: 32317
+LocationSearch | 4/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925]]
+LocationSearch | Searching for events around lat:40.744255, lon:-73.986714, radius:10, name:New York (10 mi)
+ERROR | Could not pull event info. Url: https://api.stubhub.com/search/catalog/events/v3?point=40.744255,-73.986714&radius=10&units=mi&rows=500&start=6000. Event response: <Response [429]>. Exception: Expecting value: line 1 column 1 (char 0).
+SUCCESS | Event query performed. Args: Lat: 40.744255. Lon: -73.986714. Radius: 10. Units: mi. API Calls: 15. Events Returned: 7000.
+LocationSearch | Location search returned 7000 events.
+addEventInfoByVenue | Kept 0/7000 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 0 observations. Time: 0:00:00.084260. apiCall:
+LocationSearch | Pulled Full Event Information for New York (10 mi) on 2017-03-01. Time/apiCall: 0:32:33.817548. Mongo Collection Size: 32317
+LocationSearch | 5/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925], [40.744254999999995, -73.986714000000006]]
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 01:49:54.945582
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 02:49:55.002350
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 03:49:55.094748
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 04:49:55.197636
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 05:49:55.297801
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 06:49:55.408480
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 07:49:55.514245
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 08:49:55.597449
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 09:49:55.697963
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 10:49:55.707662
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 11:49:55.789989
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 12:49:55.885309
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 13:49:55.957938
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 14:49:55.998590
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 15:49:56.098410
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-01. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-01. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: 2017-03-01 16:49:56.127955

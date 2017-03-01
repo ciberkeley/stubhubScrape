@@ -73,12 +73,10 @@ def continuousPullWrite(collection):
     api_calls = 0
     history_dict_by_day = {} # This will hold info about when a particular location was queried
     history_dict_by_eventId = {} # This will hold info about when a particular event was queried
-    localSearch_df = pd.read_csv('../data/locationSearch_official.csv') # Lat, long, radius info
-    venueId_df = pd.read_csv('../data/venueIdSearch_official.csv') # venueId info
     while True: # Infinite loop (ends when program is interrupted)
         localSearch_df = pd.read_csv('../data/locationSearch_official.csv') # Reload every loop
         venueId_df = pd.read_csv('../data/venueIdSearch_official.csv') # Reload every loop
-        venueId_list = list(venueId_df.venueId)
+        venueId_list = list(set(venueId_df.venueId))
         locSearch_names = list(localSearch_df.name)
         print('LocationSerch | Searching through locations: {}'.format(locSearch_names))
         for row_index in localSearch_df.index: # Loop through locations to search through
@@ -90,7 +88,7 @@ def continuousPullWrite(collection):
                 search_response = sh.searchEvents(lat, lon, rad, units)
                 api_calls += int(len(search_response['events']) / 500) + 1
                 print('LocationSearch | Location search returned {} events.'.format(len(search_response['events'])))
-                history_dict_by_eventId = addEventInfoByVenue(search_response['events'][:5], collection, venueId_list, history_dict_by_eventId)
+                history_dict_by_eventId = addEventInfoByVenue(search_response['events'], collection, venueId_list, history_dict_by_eventId)
                 try:
                     history_dict_by_day[curr_day].append([lat, lon]) # Add entry to location search log
                 except:

@@ -3,6 +3,7 @@ import numpy as np
 import requests
 import re, smtplib, datetime
 time = datetime.datetime.now
+import time as time1
 
 discovery_root_url = 'https://app.ticketmaster.com/discovery/v2/'
 
@@ -147,9 +148,11 @@ if __name__ == '__main__':
         print('DATE | {}'.format(date_json))
     '''
     address_list = ['brandonjflannery@gmail.com', 'jaredbaker5@gmail.com']
-    emailPresaleInfo(event_list_sf, address_list, notification_id = 'San Francisco')    
-    emailPresaleInfo(event_list_ny, address_list, notification_id = 'New York')
-    emailPresaleInfo(event_list_la, address_list, notification_id = 'Los Angeles')
+    while True: # infinite loop
+        emailPresaleInfo(event_list_sf, address_list, notification_id = 'San Francisco')    
+        emailPresaleInfo(event_list_ny, address_list, notification_id = 'New York')
+        emailPresaleInfo(event_list_la, address_list, notification_id = 'Los Angeles')
+        time1.sleep((60 * 60 * 24) - 120) # Sleep for 24 hours
 
 
 
