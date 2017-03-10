@@ -1,0 +1,388 @@
+Enter Stubhub password: SUCCESS | Generated Basic Authorization Token: WktNUnROX1RBMndPZnhqMERHSU1QdjhkMm8wYTpJYTREVE5KVXN2cV85VGxWblZ1cmhfUVpSTUVh
+SUCCESS | Logged in. User GUID: 3B39E898C8CB5D93E0540010E0463606
+PROCESS | Starting Daily Stubhub Data Pull. Start Time: 2017-03-01 17:28:55.205001
+SUCCESS | Loaded MongoDB client.
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+LocationSearch | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
+SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1883.
+LocationSearch | Location search returned 1883 events.
+addEventInfoByVenue | Kept 926/1883 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 926 observations. Time: 1:36:27.049653. apiCall:
+LocationSearch | Pulled Full Event Information for San Francisco / Oakland (25 mi) on 2017-03-01. Time/apiCall: 0:24:09.982905. Mongo Collection Size: 33243
+LocationSearch | 1/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772]]
+LocationSearch | Searching for events around lat:34.042929, lon:-118.25996, radius:25, name:Los Angeles (25 mi)
+SUCCESS | Event query performed. Args: Lat: 34.042929. Lon: -118.25996. Radius: 25. Units: mi. API Calls: 6. Events Returned: 2946.
+LocationSearch | Location search returned 2946 events.
+addEventInfoByVenue | Kept 678/2946 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 678 observations. Time: 1:10:44.509283. apiCall:
+LocationSearch | Pulled Full Event Information for Los Angeles (25 mi) on 2017-03-01. Time/apiCall: 0:16:46.492378. Mongo Collection Size: 33921
+LocationSearch | 2/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001]]
+LocationSearch | Searching for events around lat:32.777648, lon:-117.176551, radius:15, name:Orange Country (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.777648. Lon: -117.176551. Radius: 15. Units: mi. API Calls: 2. Events Returned: 862.
+LocationSearch | Location search returned 862 events.
+addEventInfoByVenue | Kept 64/862 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 64 observations. Time: 0:06:39.154018. apiCall:
+LocationSearch | Pulled Full Event Information for Orange Country (15 mi) on 2017-03-01. Time/apiCall: 0:14:32.514934. Mongo Collection Size: 33985
+LocationSearch | 3/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551]]
+LocationSearch | Searching for events around lat:32.746021, lon:-117.165925, radius:15, name:San Diego (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.746021. Lon: -117.165925. Radius: 15. Units: mi. API Calls: 2. Events Returned: 883.
+LocationSearch | Location search returned 883 events.
+addEventInfoByVenue | Kept 62/883 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 62 observations. Time: 0:06:27.805220. apiCall:
+LocationSearch | Pulled Full Event Information for San Diego (15 mi) on 2017-03-01. Time/apiCall: 0:12:56.006023. Mongo Collection Size: 34047
+LocationSearch | 4/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925]]
+LocationSearch | Searching for events around lat:40.744255, lon:-73.986714, radius:10, name:New York (10 mi)
+SUCCESS | Event query performed. Args: Lat: 40.744255. Lon: -73.986714. Radius: 10. Units: mi. API Calls: 15. Events Returned: 7500.
+LocationSearch | Location search returned 7500 events.
+addEventInfoByVenue | Kept 0/7500 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 0 observations. Time: 0:00:00.151963. apiCall:
+LocationSearch | Pulled Full Event Information for New York (10 mi) on 2017-03-01. Time/apiCall: 0:06:03.885491. Mongo Collection Size: 34047
+LocationSearch | 5/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925], [40.744254999999995, -73.986714000000006]]
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-01 20:30:51.772082
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+LocationSearch | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
+SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1907.
+LocationSearch | Location search returned 1907 events.
+addEventInfoByVenue | Kept 943/1907 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 943 observations. Time: 1:38:30.590049. apiCall:
+LocationSearch | Pulled Full Event Information for San Francisco / Oakland (25 mi) on 2017-03-02. Time/apiCall: 0:18:50.607719. Mongo Collection Size: 34990
+LocationSearch | 1/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772]]
+LocationSearch | Searching for events around lat:34.042929, lon:-118.25996, radius:25, name:Los Angeles (25 mi)
+SUCCESS | Event query performed. Args: Lat: 34.042929. Lon: -118.25996. Radius: 25. Units: mi. API Calls: 6. Events Returned: 2955.
+LocationSearch | Location search returned 2955 events.
+addEventInfoByVenue | Kept 837/2955 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 837 observations. Time: 1:26:59.350655. apiCall:
+LocationSearch | Pulled Full Event Information for Los Angeles (25 mi) on 2017-03-02. Time/apiCall: 0:18:12.013719. Mongo Collection Size: 35827
+LocationSearch | 2/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001]]
+LocationSearch | Searching for events around lat:32.777648, lon:-117.176551, radius:15, name:Orange Country (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.777648. Lon: -117.176551. Radius: 15. Units: mi. API Calls: 2. Events Returned: 857.
+LocationSearch | Location search returned 857 events.
+addEventInfoByVenue | Kept 61/857 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 61 observations. Time: 0:06:18.736421. apiCall:
+LocationSearch | Pulled Full Event Information for Orange Country (15 mi) on 2017-03-02. Time/apiCall: 0:17:29.173860. Mongo Collection Size: 35888
+LocationSearch | 3/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551]]
+LocationSearch | Searching for events around lat:32.746021, lon:-117.165925, radius:15, name:San Diego (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.746021. Lon: -117.165925. Radius: 15. Units: mi. API Calls: 2. Events Returned: 878.
+LocationSearch | Location search returned 878 events.
+addEventInfoByVenue | Kept 65/878 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 65 observations. Time: 0:06:43.867991. apiCall:
+LocationSearch | Pulled Full Event Information for San Diego (15 mi) on 2017-03-02. Time/apiCall: 0:16:50.801692. Mongo Collection Size: 35953
+LocationSearch | 4/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925]]
+LocationSearch | Searching for events around lat:40.744255, lon:-73.986714, radius:10, name:New York (10 mi)
+ERROR | Could not pull event info. Url: https://api.stubhub.com/search/catalog/events/v3?point=40.744255,-73.986714&radius=10&units=mi&rows=500&start=6500. Event response: <Response [429]>. Exception: Expecting value: line 1 column 1 (char 0).
+SUCCESS | Event query performed. Args: Lat: 40.744255. Lon: -73.986714. Radius: 10. Units: mi. API Calls: 15. Events Returned: 7000.
+LocationSearch | Location search returned 7000 events.
+addEventInfoByVenue | Kept 0/7000 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 0 observations. Time: 0:00:00.145002. apiCall:
+LocationSearch | Pulled Full Event Information for New York (10 mi) on 2017-03-02. Time/apiCall: 0:12:34.610340. Mongo Collection Size: 35953
+LocationSearch | 5/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925], [40.744254999999995, -73.986714000000006]]
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-02 05:50:57.218090
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-02. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-02. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-02. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-02. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-02. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-02 11:50:57.297974
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-02. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-02. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-02. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-02. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-02. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-02 17:50:57.367174
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-02. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-02. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-02. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-02. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-02. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-02 23:50:57.379177
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+LocationSearch | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
+SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1910.
+LocationSearch | Location search returned 1910 events.
+addEventInfoByVenue | Kept 922/1910 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 922 observations. Time: 1:36:41.054272. apiCall:
+LocationSearch | Pulled Full Event Information for San Francisco / Oakland (25 mi) on 2017-03-03. Time/apiCall: 0:36:10.410059. Mongo Collection Size: 36875
+LocationSearch | 1/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772]]
+LocationSearch | Searching for events around lat:34.042929, lon:-118.25996, radius:25, name:Los Angeles (25 mi)
+SUCCESS | Event query performed. Args: Lat: 34.042929. Lon: -118.25996. Radius: 25. Units: mi. API Calls: 6. Events Returned: 2941.
+LocationSearch | Location search returned 2941 events.
+addEventInfoByVenue | Kept 917/2941 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 917 observations. Time: 1:36:01.845388. apiCall:
+LocationSearch | Pulled Full Event Information for Los Angeles (25 mi) on 2017-03-03. Time/apiCall: 0:34:25.470943. Mongo Collection Size: 37792
+LocationSearch | 2/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001]]
+LocationSearch | Searching for events around lat:32.777648, lon:-117.176551, radius:15, name:Orange Country (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.777648. Lon: -117.176551. Radius: 15. Units: mi. API Calls: 2. Events Returned: 859.
+LocationSearch | Location search returned 859 events.
+addEventInfoByVenue | Kept 62/859 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 62 observations. Time: 0:06:28.625769. apiCall:
+LocationSearch | Pulled Full Event Information for Orange Country (15 mi) on 2017-03-03. Time/apiCall: 0:33:32.843799. Mongo Collection Size: 37854
+LocationSearch | 3/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551]]
+LocationSearch | Searching for events around lat:32.746021, lon:-117.165925, radius:15, name:San Diego (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.746021. Lon: -117.165925. Radius: 15. Units: mi. API Calls: 2. Events Returned: 880.
+LocationSearch | Location search returned 880 events.
+addEventInfoByVenue | Kept 63/880 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 63 observations. Time: 0:06:34.212894. apiCall:
+LocationSearch | Pulled Full Event Information for San Diego (15 mi) on 2017-03-03. Time/apiCall: 0:32:43.176504. Mongo Collection Size: 37917
+LocationSearch | 4/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925]]
+LocationSearch | Searching for events around lat:40.744255, lon:-73.986714, radius:10, name:New York (10 mi)
+SUCCESS | Event query performed. Args: Lat: 40.744255. Lon: -73.986714. Radius: 10. Units: mi. API Calls: 15. Events Returned: 7500.
+LocationSearch | Location search returned 7500 events.
+addEventInfoByVenue | Kept 0/7500 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 0 observations. Time: 0:00:00.146074. apiCall:
+LocationSearch | Pulled Full Event Information for New York (10 mi) on 2017-03-03. Time/apiCall: 0:26:50.779385. Mongo Collection Size: 37917
+LocationSearch | 5/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925], [40.744254999999995, -73.986714000000006]]
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-03 09:18:14.573340
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-03. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-03. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-03. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-03. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-03. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-03 15:18:14.680435
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-03. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-03. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-03. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-03. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-03. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-03 21:18:14.771955
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+LocationSearch | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
+SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1910.
+LocationSearch | Location search returned 1910 events.
+addEventInfoByVenue | Kept 940/1910 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 940 observations. Time: 1:38:27.048397. apiCall:
+LocationSearch | Pulled Full Event Information for San Francisco / Oakland (25 mi) on 2017-03-04. Time/apiCall: 0:38:21.923098. Mongo Collection Size: 38857
+LocationSearch | 1/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772]]
+LocationSearch | Searching for events around lat:34.042929, lon:-118.25996, radius:25, name:Los Angeles (25 mi)
+SUCCESS | Event query performed. Args: Lat: 34.042929. Lon: -118.25996. Radius: 25. Units: mi. API Calls: 6. Events Returned: 2942.
+LocationSearch | Location search returned 2942 events.
+addEventInfoByVenue | Kept 890/2942 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 890 observations. Time: 1:33:29.723860. apiCall:
+LocationSearch | Pulled Full Event Information for Los Angeles (25 mi) on 2017-03-04. Time/apiCall: 0:36:59.267952. Mongo Collection Size: 39747
+LocationSearch | 2/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001]]
+LocationSearch | Searching for events around lat:32.777648, lon:-117.176551, radius:15, name:Orange Country (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.777648. Lon: -117.176551. Radius: 15. Units: mi. API Calls: 2. Events Returned: 864.
+LocationSearch | Location search returned 864 events.
+addEventInfoByVenue | Kept 60/864 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 60 observations. Time: 0:06:17.006817. apiCall:
+LocationSearch | Pulled Full Event Information for Orange Country (15 mi) on 2017-03-04. Time/apiCall: 0:36:19.111773. Mongo Collection Size: 39807
+LocationSearch | 3/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551]]
+LocationSearch | Searching for events around lat:32.746021, lon:-117.165925, radius:15, name:San Diego (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.746021. Lon: -117.165925. Radius: 15. Units: mi. API Calls: 2. Events Returned: 886.
+LocationSearch | Location search returned 886 events.
+addEventInfoByVenue | Kept 67/886 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 67 observations. Time: 0:06:59.927069. apiCall:
+LocationSearch | Pulled Full Event Information for San Diego (15 mi) on 2017-03-04. Time/apiCall: 0:35:40.935908. Mongo Collection Size: 39874
+LocationSearch | 4/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925]]
+LocationSearch | Searching for events around lat:40.744255, lon:-73.986714, radius:10, name:New York (10 mi)
+ERROR | Could not pull event info. Url: https://api.stubhub.com/search/catalog/events/v3?point=40.744255,-73.986714&radius=10&units=mi&rows=500&start=6500. Event response: <Response [429]>. Exception: Expecting value: line 1 column 1 (char 0).
+SUCCESS | Event query performed. Args: Lat: 40.744255. Lon: -73.986714. Radius: 10. Units: mi. API Calls: 15. Events Returned: 7000.
+LocationSearch | Location search returned 7000 events.
+addEventInfoByVenue | Kept 0/7000 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 0 observations. Time: 0:00:00.133123. apiCall:
+LocationSearch | Pulled Full Event Information for New York (10 mi) on 2017-03-04. Time/apiCall: 0:31:09.177523. Mongo Collection Size: 39874
+LocationSearch | 5/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925], [40.744254999999995, -73.986714000000006]]
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-04 06:44:58.155267
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-04. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-04. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-04. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-04. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-04. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-04 12:44:58.224282
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-04. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-04. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-04. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-04. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-04. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-04 18:44:58.278932
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+LocationSearch | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
+SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1886.
+LocationSearch | Location search returned 1886 events.
+addEventInfoByVenue | Kept 982/1886 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 982 observations. Time: 1:42:49.216218. apiCall:
+LocationSearch | Pulled Full Event Information for San Francisco / Oakland (25 mi) on 2017-03-05. Time/apiCall: 0:39:49.707892. Mongo Collection Size: 40856
+LocationSearch | 1/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772]]
+LocationSearch | Searching for events around lat:34.042929, lon:-118.25996, radius:25, name:Los Angeles (25 mi)
+SUCCESS | Event query performed. Args: Lat: 34.042929. Lon: -118.25996. Radius: 25. Units: mi. API Calls: 6. Events Returned: 2915.
+LocationSearch | Location search returned 2915 events.
+addEventInfoByVenue | Kept 785/2915 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 785 observations. Time: 1:22:33.231962. apiCall:
+LocationSearch | Pulled Full Event Information for Los Angeles (25 mi) on 2017-03-05. Time/apiCall: 0:38:36.536336. Mongo Collection Size: 41641
+LocationSearch | 2/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001]]
+LocationSearch | Searching for events around lat:32.777648, lon:-117.176551, radius:15, name:Orange Country (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.777648. Lon: -117.176551. Radius: 15. Units: mi. API Calls: 2. Events Returned: 856.
+LocationSearch | Location search returned 856 events.
+addEventInfoByVenue | Kept 61/856 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 61 observations. Time: 0:06:24.870279. apiCall:
+LocationSearch | Pulled Full Event Information for Orange Country (15 mi) on 2017-03-05. Time/apiCall: 0:38:03.901363. Mongo Collection Size: 41702
+LocationSearch | 3/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551]]
+LocationSearch | Searching for events around lat:32.746021, lon:-117.165925, radius:15, name:San Diego (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.746021. Lon: -117.165925. Radius: 15. Units: mi. API Calls: 2. Events Returned: 879.
+LocationSearch | Location search returned 879 events.
+addEventInfoByVenue | Kept 66/879 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 66 observations. Time: 0:06:57.814591. apiCall:
+LocationSearch | Pulled Full Event Information for San Diego (15 mi) on 2017-03-05. Time/apiCall: 0:37:32.505511. Mongo Collection Size: 41768
+LocationSearch | 4/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925]]
+LocationSearch | Searching for events around lat:40.744255, lon:-73.986714, radius:10, name:New York (10 mi)
+SUCCESS | Event query performed. Args: Lat: 40.744255. Lon: -73.986714. Radius: 10. Units: mi. API Calls: 15. Events Returned: 7500.
+LocationSearch | Location search returned 7500 events.
+addEventInfoByVenue | Kept 0/7500 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 0 observations. Time: 0:00:00.146036. apiCall:
+LocationSearch | Pulled Full Event Information for New York (10 mi) on 2017-03-05. Time/apiCall: 0:33:29.329642. Mongo Collection Size: 41768
+LocationSearch | 5/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925], [40.744254999999995, -73.986714000000006]]
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-05 04:05:15.994386
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-05. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-05. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-05. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-05. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-05. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-05 10:05:16.030673
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-05. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-05. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-05. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-05. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-05. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-05 16:05:16.038775
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-05. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-05. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-05. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-05. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-05. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-05 22:05:16.100710
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+LocationSearch | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
+SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1860.
+LocationSearch | Location search returned 1860 events.
+addEventInfoByVenue | Kept 887/1860 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 887 observations. Time: 1:32:33.790530. apiCall:
+LocationSearch | Pulled Full Event Information for San Francisco / Oakland (25 mi) on 2017-03-06. Time/apiCall: 0:42:41.492545. Mongo Collection Size: 42655
+LocationSearch | 1/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772]]
+LocationSearch | Searching for events around lat:34.042929, lon:-118.25996, radius:25, name:Los Angeles (25 mi)
+SUCCESS | Event query performed. Args: Lat: 34.042929. Lon: -118.25996. Radius: 25. Units: mi. API Calls: 6. Events Returned: 2859.
+LocationSearch | Location search returned 2859 events.
+addEventInfoByVenue | Kept 818/2859 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 818 observations. Time: 1:25:54.820350. apiCall:
+LocationSearch | Pulled Full Event Information for Los Angeles (25 mi) on 2017-03-06. Time/apiCall: 0:41:36.971319. Mongo Collection Size: 43473
+LocationSearch | 2/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001]]
+LocationSearch | Searching for events around lat:32.777648, lon:-117.176551, radius:15, name:Orange Country (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.777648. Lon: -117.176551. Radius: 15. Units: mi. API Calls: 2. Events Returned: 831.
+LocationSearch | Location search returned 831 events.
+addEventInfoByVenue | Kept 60/831 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 60 observations. Time: 0:06:19.185253. apiCall:
+LocationSearch | Pulled Full Event Information for Orange Country (15 mi) on 2017-03-06. Time/apiCall: 0:41:08.164486. Mongo Collection Size: 43533
+LocationSearch | 3/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551]]
+LocationSearch | Searching for events around lat:32.746021, lon:-117.165925, radius:15, name:San Diego (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.746021. Lon: -117.165925. Radius: 15. Units: mi. API Calls: 2. Events Returned: 855.
+LocationSearch | Location search returned 855 events.
+addEventInfoByVenue | Kept 67/855 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 67 observations. Time: 0:06:59.904284. apiCall:
+LocationSearch | Pulled Full Event Information for San Diego (15 mi) on 2017-03-06. Time/apiCall: 0:40:40.322042. Mongo Collection Size: 43600
+LocationSearch | 4/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925]]
+LocationSearch | Searching for events around lat:40.744255, lon:-73.986714, radius:10, name:New York (10 mi)
+SUCCESS | Event query performed. Args: Lat: 40.744255. Lon: -73.986714. Radius: 10. Units: mi. API Calls: 15. Events Returned: 7500.
+LocationSearch | Location search returned 7500 events.
+addEventInfoByVenue | Kept 0/7500 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 0 observations. Time: 0:00:00.142095. apiCall:
+LocationSearch | Pulled Full Event Information for New York (10 mi) on 2017-03-06. Time/apiCall: 0:37:01.231367. Mongo Collection Size: 43600
+LocationSearch | 5/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925], [40.744254999999995, -73.986714000000006]]
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-06 07:18:34.390920
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-06. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-06. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-06. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-06. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-06. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-06 13:18:34.487198
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-06. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-06. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-06. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-06. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-06. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-06 19:18:34.583349
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+LocationSearch | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
+SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1868.
+LocationSearch | Location search returned 1868 events.
+addEventInfoByVenue | Kept 896/1868 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 896 observations. Time: 1:34:39.076212. apiCall:
+LocationSearch | Pulled Full Event Information for San Francisco / Oakland (25 mi) on 2017-03-07. Time/apiCall: 0:42:39.729076. Mongo Collection Size: 44496
+LocationSearch | 1/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772]]
+LocationSearch | Searching for events around lat:34.042929, lon:-118.25996, radius:25, name:Los Angeles (25 mi)
+SUCCESS | Event query performed. Args: Lat: 34.042929. Lon: -118.25996. Radius: 25. Units: mi. API Calls: 6. Events Returned: 2867.
+LocationSearch | Location search returned 2867 events.
+addEventInfoByVenue | Kept 780/2867 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 780 observations. Time: 1:21:54.219736. apiCall:
+LocationSearch | Pulled Full Event Information for Los Angeles (25 mi) on 2017-03-07. Time/apiCall: 0:41:44.273483. Mongo Collection Size: 45276
+LocationSearch | 2/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001]]
+LocationSearch | Searching for events around lat:32.777648, lon:-117.176551, radius:15, name:Orange Country (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.777648. Lon: -117.176551. Radius: 15. Units: mi. API Calls: 2. Events Returned: 831.
+LocationSearch | Location search returned 831 events.
+addEventInfoByVenue | Kept 63/831 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 63 observations. Time: 0:06:34.703058. apiCall:
+LocationSearch | Pulled Full Event Information for Orange Country (15 mi) on 2017-03-07. Time/apiCall: 0:41:20.018971. Mongo Collection Size: 45339
+LocationSearch | 3/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551]]
+LocationSearch | Searching for events around lat:32.746021, lon:-117.165925, radius:15, name:San Diego (15 mi)
+SUCCESS | Event query performed. Args: Lat: 32.746021. Lon: -117.165925. Radius: 15. Units: mi. API Calls: 2. Events Returned: 856.
+LocationSearch | Location search returned 856 events.
+addEventInfoByVenue | Kept 65/856 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 65 observations. Time: 0:06:45.772015. apiCall:
+LocationSearch | Pulled Full Event Information for San Diego (15 mi) on 2017-03-07. Time/apiCall: 0:40:56.327421. Mongo Collection Size: 45404
+LocationSearch | 4/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925]]
+LocationSearch | Searching for events around lat:40.744255, lon:-73.986714, radius:10, name:New York (10 mi)
+SUCCESS | Event query performed. Args: Lat: 40.744255. Lon: -73.986714. Radius: 10. Units: mi. API Calls: 15. Events Returned: 7500.
+LocationSearch | Location search returned 7500 events.
+addEventInfoByVenue | Kept 8/7500 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 8 observations. Time: 0:00:50.164558. apiCall:
+LocationSearch | Pulled Full Event Information for New York (10 mi) on 2017-03-07. Time/apiCall: 0:37:47.840851. Mongo Collection Size: 45412
+LocationSearch | 5/5 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925], [40.744254999999995, -73.986714000000006]]
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-07 04:30:46.104335
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-07. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-07. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-07. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-07. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-07. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-07 10:30:46.190118
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-07. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-07. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-07. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-07. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-07. Skipping.
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-07 16:30:46.282278
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)', 'Santa Barbara (15 mi)']
+WARNING | Location: 37.813552,-122.369772,25 already scraped on 2017-03-07. Skipping.
+WARNING | Location: 34.042929,-118.25996,25 already scraped on 2017-03-07. Skipping.
+WARNING | Location: 32.777648,-117.176551,15 already scraped on 2017-03-07. Skipping.
+WARNING | Location: 32.746021,-117.165925,15 already scraped on 2017-03-07. Skipping.
+WARNING | Location: 40.744255,-73.986714,10 already scraped on 2017-03-07. Skipping.
+LocationSearch | Searching for events around lat:34.438243, lon:-119.74662, radius:15, name:Santa Barbara (15 mi)
+LocationSearch | Location search returned 91 events.
+addEventInfoByVenue | Kept 21/91 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 21 observations. Time: 0:02:13.399738. apiCall:
+LocationSearch | Pulled Full Event Information for Santa Barbara (15 mi) on 2017-03-07. Time/apiCall: 0:42:47.682107. Mongo Collection Size: 45433
+LocationSearch | 6/6 lat, long corrdinates searched today: [[37.813552000000001, -122.369772], [34.042929000000001, -118.25996000000001], [32.777647999999999, -117.176551], [32.746020999999999, -117.165925], [40.744254999999995, -73.986714000000006], [34.438243, -119.74661999999999]]
+SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: 2017-03-07 22:33:00.767927
+LocationSerch | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)', 'Santa Barbara (15 mi)']
+LocationSearch | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
+SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1882.
+LocationSearch | Location search returned 1882 events.
+addEventInfoByVenue | Kept 915/1882 event observations after venueId filtering.
+addEventInfoByVenue | Completed Full Event Info pull for 915 observations. Time: 1:36:11.149311. apiCall:
+LocationSearch | Pulled Full Event Information for San Francisco / Oakland (25 mi) on 2017-03-08. Time/apiCall: 0:44:08.023187. Mongo Collection Size: 46348
+LocationSearch | 1/6 lat, long corrdinates searched today: [[37.813552000000001, -122.369772]]
+LocationSearch | Searching for events around lat:34.042929, lon:-118.25996, radius:25, name:Los Angeles (25 mi)
+SUCCESS | Event query performed. Args: Lat: 34.042929. Lon: -118.25996. Radius: 25. Units: mi. API Calls: 6. Events Returned: 2924.
+LocationSearch | Location search returned 2924 events.
+addEventInfoByVenue | Kept 777/2924 event observations after venueId filtering.

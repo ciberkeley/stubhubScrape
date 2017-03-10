@@ -93,7 +93,7 @@ def getFullEventInfo(eventId, eventObject = None):
     return full_info
 
 
-def searchEvents(latitude, longitude, radius = 40, units = 'mi'):
+def searchEvents(latitude, longitude, radius = 40, units = 'mi', venueId_list = None):
     # DESCRIPTION: Given the specified location coordinates, find all active stubhub events
     # 		  matching the specified criteria
     #		  This returns a dictionary formatted as {'numFound: int, 'events': list}
@@ -108,6 +108,11 @@ def searchEvents(latitude, longitude, radius = 40, units = 'mi'):
     try:
         eSearchJson = event_response.json()
         numFound_1st = eSearchJson['numFound']
+        if venueId_list != None: # VenueId Filter
+            old_len = len(eSearchJson['events'])
+            eSearchJson['events'] = [x for x in eSearchJson['events'] if x['venue']['id'] in venueId_list]
+            new_len = len(eSearchJson['events'])
+            print('INFO | VenueId-filtered for  {}/{} search entries'.format(new_len, old_len))
 	if 'geoExpansion' in eSearchJson.keys():
             raise(Exception('GeoExpansion activated, poor search criteria'))
     except Exception, e:
@@ -123,6 +128,11 @@ def searchEvents(latitude, longitude, radius = 40, units = 'mi'):
 	    event_response = requests.get(curr_url, headers=headers)
 	    api_calls += 1
 	    temp_events_list = event_response.json()['events']
+	    if venueId_list != None: # VenueId Filter
+                old_len = len(temp_events_list)
+                temp_events_list = [x for x in temp_events_list if x['venue']['id'] in venueId_list]
+                new_len = len(temp_events_list)
+		print('INFO | VenueId-filtered for  {}/{} search entries'.format(new_len, old_len))
 	    eSearchJson['events'] = eSearchJson['events'] + temp_events_list
         except Exception, e:
 	    print('ERROR | Could not pull event info. Url: {}. Event response: {}. Exception: {}.'.format(curr_url, event_response, e))

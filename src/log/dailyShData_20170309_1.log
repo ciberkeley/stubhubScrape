@@ -1,0 +1,9 @@
+Enter Stubhub password: SUCCESS | Generated Basic Authorization Token: WktNUnROX1RBMndPZnhqMERHSU1QdjhkMm8wYTpJYTREVE5KVXN2cV85VGxWblZ1cmhfUVpSTUVh
+SUCCESS | Logged in. User GUID: 3B39E898C8CB5D93E0540010E0463606
+PROCESS | Starting Daily Stubhub Data Pull. Start Time: 2017-03-10 05:36:03.883987
+SUCCESS | Loaded MongoDB client.
+INFO | Searching through locations: ['San Francisco / Oakland (25 mi)', 'Los Angeles (25 mi)', 'Orange Country (15 mi)', 'San Diego (15 mi)', 'New York (10 mi)', 'Santa Barbara (15 mi)']
+INFO | Searching for events around lat:37.813552, lon:-122.369772, radius:25, name:San Francisco / Oakland (25 mi)
+SUCCESS | Event query performed. Args: Lat: 37.813552. Lon: -122.369772. Radius: 25. Units: mi. API Calls: 4. Events Returned: 1885.
+SUCCESS | Location search returned 1885 events.
+addEventInfoByVenue | Kept 926/1885 event observations after venueId filtering.

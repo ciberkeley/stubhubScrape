@@ -60,7 +60,7 @@ def addEventInfoByVenue(event_json_list, shCollection, venue_id_list, history_di
     total_time = time() - st
     api_call_rate = api_calls
     string_format = [len(filtered_event_list), total_time, api_call_rate]
-    print('addEventInfoByVenue | Completed Full Event Info pull for {} observations. Time: {}. apiCall:'.format(*string_format))
+    print('SUCCESS | Completed Full Event Info pull for {} observations. Time: {}. apiCall:'.format(*string_format))
     return history_dict_by_eventId
 
 
@@ -78,32 +78,32 @@ def continuousPullWrite(collection):
         venueId_df = pd.read_csv('../data/venueIdSearch_official.csv') # Reload every loop
         venueId_list = list(set(venueId_df.venueId))
         locSearch_names = list(localSearch_df.name)
-        print('LocationSerch | Searching through locations: {}'.format(locSearch_names))
+        print('INFO | Searching through locations: {}'.format(locSearch_names))
         for row_index in localSearch_df.index: # Loop through locations to search through
             lat, lon, rad, units, name = localSearch_df.ix[row_index][['lat', 'lon', 'rad', 'units', 'name']]
             curr_day = str(time())[:10]
             scraped_today = scrapedToday(history_dict_by_day, curr_day, lat, lon)
             if not scraped_today:
-                print('LocationSearch | Searching for events around lat:{}, lon:{}, radius:{}, name:{}'.format(lat, lon, rad, name))
-                search_response = sh.searchEvents(lat, lon, rad, units)
+                print('INFO | Searching for events around lat:{}, lon:{}, radius:{}, name:{}'.format(lat, lon, rad, name))
+                search_response = sh.searchEvents(lat, lon, rad, units, venueId_list)
                 api_calls += int(len(search_response['events']) / 500) + 1
-                print('LocationSearch | Location search returned {} events.'.format(len(search_response['events'])))
+                print('SUCCESS | Location search returned {} events.'.format(len(search_response['events'])))
                 history_dict_by_eventId = addEventInfoByVenue(search_response['events'], collection, venueId_list, history_dict_by_eventId)
                 try:
                     history_dict_by_day[curr_day].append([lat, lon]) # Add entry to location search log
                 except:
                     history_dict_by_day[curr_day] = [[lat, lon]]
                 string_format = [name, curr_day, (time() - st) / api_calls, collection.count()]
-                print('LocationSearch | Pulled Full Event Information for {} on {}. Time/apiCall: {}. Mongo Collection Size: {}'.format(*string_format))
+                print('SUCCESS | Pulled Full Event Information for {} on {}. Time/apiCall: {}. Mongo Collection Size: {}'.format(*string_format))
                 string_format = [len(history_dict_by_day[curr_day]), len(localSearch_df), history_dict_by_day[curr_day]]
-                print('LocationSearch | {}/{} lat, long corrdinates searched today: {}'.format(*string_format))
+                print('INFO | {}/{} lat, long corrdinates searched today: {}'.format(*string_format))
             else:
                 print('WARNING | Location: {},{},{} already scraped on {}. Skipping.'.format(lat, lon, rad, curr_day))
         today = str(time())[:10]
         doneForToday = len(history_dict_by_day[today]) == len(localSearch_df) # We searched all locations
         if doneForToday:
-            print('SLEEP | Searched all locations for today. Sleeping for 1 hour... Start Time: {}'.format(time()))
-            time1.sleep(60 * 60 * 1) # Sleep for 1 hour
+            print('SLEEP | Searched all locations for today. Sleeping for 6 hours... Start Time: {}'.format(time()))
+            time1.sleep(60 * 60 * 6) # Sleep for 6 hour
         # continue to another event search
     return None
 
