@@ -103,6 +103,8 @@ def emailPresaleInfo(event_list, address_list, notification_id):
         event_header_string = "\n".join([name,date,venue_string,url])
         try: # Get active presales and format the email
             presales_json = getSalesJson(event, 'presales', active = True) # Get active presales
+            if sum(['presale' not in str(x['name']).lower() for x in presales_json]) == len(presales_json):
+                raise Exception('No presale-specific items found.')
             if len(presales_json) == 0: # No active presales for this event
                 continue
             pretty_sales = '\n'.join([pretty(x, 1) for x in presales_json]).decode('utf-8')
@@ -112,7 +114,7 @@ def emailPresaleInfo(event_list, address_list, notification_id):
         except Exception, e:
             # Note: most of these errors are because the event is listed on ticketsnow.com, ticketweb.com
             #       or livenation.com.... needs to be fixed
-            print('ERROR | Could not extract presale info for --> {}'.format(','.join([name,url])))
+            print('ERROR | Could not extract presale info for --> {}. Exception: {}'.format(','.join([name,url]), e))
             continue
     subject = '{} | Presale Notifications: {}'.format(notification_id, time())
     msg = '======================\n==>PRESALE INFO\n==>{}\n==>Successful Observations: {}/{}\n======================\n{}'.format(time(), success_count, len(event_list), full_presale_info_string)
